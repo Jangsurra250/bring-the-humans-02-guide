@@ -29,6 +29,7 @@ one and want the exact entry loop without digging through docs.
 - [Letting your agent run the whole loop](#letting-your-agent-run-the-whole-loop)
 - [Your own referral link](#your-own-referral-link)
 - [Common mistakes that cost beginners a submission](#common-mistakes-that-cost-beginners-a-submission)
+- [If something goes wrong](#if-something-goes-wrong)
 - [FAQ](#faq)
 - [Links](#links)
 
@@ -304,6 +305,29 @@ thanks, and it costs you nothing.
 - **Sharing a keypair or seed phrase.** Nobody legitimate ever needs it — not
   make.fun support, not a bounty, not another entrant. Keep
   `~/.makefun/keypairs/` private.
+
+## If something goes wrong
+
+- **`login` stops waiting before you approve.** Run the command again. The
+  approval link and code are fresh each run; nothing is lost.
+- **`bundle` writes nothing and names a missing part.** Read what it asks for
+  and add that flag. The usual gaps are the system prompt file
+  (`--system-prompt <file>`), the effort level (`--effort <level>`), and the
+  usage rows for Muse app sessions (`--muse-usage <file>`).
+- **`check` fails.** Every failure prints its fix. Fix them all and run
+  `check` again before you submit — a rejected entry still counts toward the
+  daily limit, so this loop is where you save submissions.
+- **Your session started before the bounty opened.** That session cannot be
+  entered, even if the work continued after the opening. Start a fresh
+  session and build there; do not edit session logs to fit, which is itself a
+  disqualifying edit.
+- **The badges at the top of a README do not render.** Check that the owner
+  and repository in the badge URLs match the repository exactly, including
+  spelling. The three badge lines must stay live images, not screenshots of
+  badges, and must not sit inside a code block or an HTML comment.
+- **A screenshot is refused for size.** Capture at normal (1x) scale, not
+  double scale. The limit is 8 MB and 16,000,000 pixels; a full-page capture
+  of a long guide at double scale is the usual way to exceed it.
 
 ## FAQ
 
