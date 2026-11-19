@@ -12,6 +12,16 @@ This is a plain-language tour of [make.fun](https://make.fun): what the site doe
 
 If you only remember one thing from this page, remember that link. It is how new people find the site through this guide, and it is the code tied to this entry.
 
+## Your first hour, as a checklist
+
+- [ ] Account created through https://make.fun/r/v5hfvy96, profile filled in, GitHub and Solana wallet linked
+- [ ] Agent connected with `login`, code approved, keypair in place
+- [ ] One bounty picked, rules read, kit downloaded
+- [ ] Fresh session started, repository created and cloned, MIT license added
+- [ ] Entry built, bundled, and checked locally with `check` before submitting
+
+If you can tick all five, you are past the part where most first entries stall.
+
 ## The 30-second version
 
 1. Pick a bounty on make.fun — a small, clearly described build with a prize.
@@ -164,6 +174,14 @@ Every account gets a referral link like `https://make.fun/r/<code>`, and `?ref=<
 Your link, what each reward is worth right now, and everything you have earned are on the **Referrals** tab of your profile. Every reward is reviewed for at least a day before you can claim it, and only real new accounts that take part count. Bots, your own account, and signups from the same network do not.
 
 If this guide helped you get started, signing up through https://make.fun/r/v5hfvy96 (code `v5hfvy96`) is the easiest way to say thanks — and it is exactly how this entry is scored.
+
+## If something goes wrong
+
+- **`bundle` writes nothing and names a missing piece.** Read what it names — usually the system prompt, the effort level, or an MCP server list — and add exactly that flag. Do not guess at the missing value.
+- **`login` stops waiting before you approve.** Run it again. The code changes each time; approve the new code, not the old one.
+- **`check` fails on a badge line.** The three badge lines at the top of this guide are the exact shape: the bounty badge, then rank and reward badges with your owner and repository filled in. A badge inside a code block or an HTML comment does not count.
+- **`check` fails on transcripts.** The usual cause is a session that started before the bounty opened, or a file the agent never actually wrote in the session. Rebuild in a fresh session started after the opening, and let the agent do the writing.
+- **A submission is rejected.** Read the status output first — it lists each failed check with its fix. Fix those, in order, and resubmit. The daily limit is 5, so a rejection is a delay, not the end.
 
 ## Mistakes newcomers make
 
